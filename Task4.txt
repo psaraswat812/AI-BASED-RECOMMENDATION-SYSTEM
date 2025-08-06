@@ -1,0 +1,60 @@
+Internship Task - 4: AI-Based Recommendation System
+
+Submitted by: Puranjay Saraswat
+Technology Used: Java
+Concepts: Recommendation Systems, Collaborative Filtering, AI Logic, HashMap
+
+Description:
+This project implements a basic recommendation engine using Java. The system analyzes user preferences (ratings) and recommends items that similar users have rated highly.
+
+Approach:
+- The program uses Collaborative Filtering (User-User Similarity) to suggest items.
+- Each user has rated a set of items (e.g., movies).
+- The system finds users who have similar taste based on common ratings.
+- It then recommends items rated highly by similar users but not yet seen by the current user.
+
+Key Features:
+- No external libraries required (pure Java)
+- Uses Maps to store user-item-rating data
+- Calculates similarity based on overlap of rated items and score closeness
+- Filters and sorts recommended items based on total similarity score
+- Outputs personalized recommendations
+
+How It Works:
+1. Sample users and their movie ratings are hardcoded.
+2. When a user enters their name, the program:
+   - Compares their ratings with others
+   - Finds similar users (those who rated the same movies similarly)
+   - Recommends items those similar users liked (rating >= 4) and user hasn't seen
+3. Sorted recommendations are displayed in the console.
+
+Sample Users:
+- Alice: likes Avengers, Titanic, Joker
+- Bob: likes Avengers, Joker, Batman
+- Charlie: likes Titanic, Joker, Batman
+
+Sample Output:
+User: Alice
+Recommended: Batman
+
+Why It's AI-Based:
+- Uses logic from collaborative filtering and rating analysis
+- Makes suggestions based on user behavior patterns
+- Demonstrates the fundamentals of personalized recommendation systems
+
+How to Run:
+1. Compile:
+   javac RecommendationSystem.java
+
+2. Run:
+   java RecommendationSystem
+
+3. Input user name (e.g., Alice, Bob, Charlie)
+
+Future Extensions:
+- Read user data from file or database
+- Allow dynamic rating input from users
+- Use Apache Mahout or other ML libraries for large-scale systems
+
+Note:
+This version is intentionally kept simple to demonstrate logic clearly without external dependencies.
