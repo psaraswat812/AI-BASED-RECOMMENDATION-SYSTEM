@@ -5,6 +5,7 @@ INTERN ID : CT04DZ1931
 DOMAIN : JAVA PROGRAMMING
 DURATION : 4 WEEKS
 MENTOR : NEELA SANTOSH
+
 DESCRIPTION : 
 RecommendationSystem.java – Full Description (500+ words)
 The RecommendationSystem Java class provides a basic simulation of an AI-based recommendation system using user similarity. It demonstrates how a simple collaborative filtering approach can be used to generate product or movie recommendations based on user preferences. The algorithm uses a similarity score based on how similarly two users have rated common items.
